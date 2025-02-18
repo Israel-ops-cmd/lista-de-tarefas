@@ -38,3 +38,8 @@ const selectedTask = tasks.find((task) => {
     return task.descricao == 'Treinar violão'
 })
 
+//verificar se todas as tarefas estão concluídas
+const isEveryTaksDone = tasks.every((task) => {
+    return task.status == 'concluída'
+})
+
