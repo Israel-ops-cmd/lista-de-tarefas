@@ -23,3 +23,13 @@ const doneTasks = tasks.map((task) => {
 //ordenar tarefas por prioridade
 const sortedTasks = tasks.sort((prevTasks, currentTasks) => prevTasks.prioridade - currentTasks.prioridade)
 
+//contar tarefas pendentes
+const pendingTasksQtd = tasks.reduce((prev, next) => {
+    if(next.status == 'pendente'){
+        return prev + 1;
+    }
+    else{
+        return prev
+    }
+}, 0)
+
