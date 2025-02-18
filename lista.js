@@ -20,3 +20,6 @@ const doneTasks = tasks.map((task) => {
     return task.status = 'concluído'
 })
 
+//ordenar tarefas por prioridade
+const sortedTasks = tasks.sort((prevTasks, currentTasks) => prevTasks.prioridade - currentTasks.prioridade)
+
