@@ -15,3 +15,8 @@ const pendingTasks = tasks.filter((task) => {
     return task.status == "pendentes"
 })
 
+//marcar tarefas como concluídas
+const doneTasks = tasks.map((task) => {
+    return task.status = 'concluído'
+})
+
