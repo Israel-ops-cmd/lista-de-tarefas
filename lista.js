@@ -33,3 +33,8 @@ const pendingTasksQtd = tasks.reduce((prev, next) => {
     }
 }, 0)
 
+//encontrar uma tarefa específica
+const selectedTask = tasks.find((task) => {
+    return task.descricao == 'Treinar violão'
+})
+
