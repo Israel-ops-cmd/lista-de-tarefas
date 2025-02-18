@@ -10,3 +10,8 @@ const tasks = [
 //adicionar novas tarefas
 tasks.push({descricao: "Treinar violão", prioridade: 2, status: 'pedente'})
 
+//remover tarefas concluídas
+const pendingTasks = tasks.filter((task) => {
+    return task.status == "pendentes"
+})
+
